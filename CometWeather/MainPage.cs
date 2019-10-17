@@ -18,9 +18,9 @@ namespace CometWeather
             new GradientView(()=> GetColor(true), ()=> GetColor(false)),
             new VStack
             {
-                new Text("Delhi"),
+                new Text("Seattle").FontSize(40),
                 new Image("spaceneedle.png").Frame(alignment: Alignment.Center),
-                new Text(() => $"{(int)WeatherItem.Value?.Temp}")
+                new Text(() => $"{WeatherItem.Value?.Temp.ToString("N0")}")
                     .FontSize(60),
                 
             }

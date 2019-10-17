@@ -23,6 +23,7 @@ namespace CometWeather
                 {
                     await Task.Delay(100);
                     var weather = CreateRandom();
+                    await ThreadHelper.SwitchToMainThreadAsync();
                     State.Value = weather;
                 }
                 catch(Exception ex)
