@@ -29,7 +29,8 @@ namespace CometWeather.iOS
 #if DEBUG
             Comet.Reload.Init();
 #endif
-            Comet.Skia.iOS.UI.Init();
+            Comet.Skia.UI.Init();
+            "spaceneedle.png".LoadImage ();
             window = new UIWindow
             {
                 RootViewController = new MainPage().ToViewController()

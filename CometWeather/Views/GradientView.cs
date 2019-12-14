@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Drawing;
 using Comet;
 using Comet.Skia;
 using SkiaSharp;
+using Color = Comet.Color;
 
 namespace CometWeather.Views
 {
